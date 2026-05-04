@@ -1,0 +1,68 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+android/.idea/
+ios/.idea/
+
+# VS Code
+.vscode/
+
+# Flutter / Dart / Packages
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
+build/
+coverage/
+
+# Generated files
+**/generated_plugin_registrant.dart
+
+# Android
+android/app/debug
+android/app/profile
+android/app/release
+android/local.properties
+android/key.properties
+android/captures/
+android/.gradle/
+
+# iOS
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/.symlinks/
+
+# macOS
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/Runner/GeneratedPluginRegistrant.swift
+
+# Linux
+linux/flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+
+# Symbols
+app.*.symbols
