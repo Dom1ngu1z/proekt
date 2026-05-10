@@ -1,7 +1,4 @@
--- =========================================================
--- Supabase schema for the "social network groups" mini app
--- Execute this script in Supabase SQL Editor.
--- =========================================================
+
 
 -- Recreate from scratch for a clean setup.
 drop view if exists public.feed_view;
@@ -13,9 +10,9 @@ drop table if exists public.groups cascade;
 
 create extension if not exists pgcrypto;
 
--- ---------------------------------------------------------
+
 -- Utility: автоматически обновлять updated_at
--- ---------------------------------------------------------
+
 create or replace function public.set_updated_at()
 returns trigger
 language plpgsql
@@ -26,9 +23,9 @@ begin
 end;
 $$;
 
--- ---------------------------------------------------------
+
 -- Utility: создавать профиль при регистрации
--- ---------------------------------------------------------
+
 create or replace function public.handle_new_user()
 returns trigger
 language plpgsql
@@ -58,9 +55,9 @@ after insert on auth.users
 for each row
 execute function public.handle_new_user();
 
--- ---------------------------------------------------------
+
 -- Table: groups
--- ---------------------------------------------------------
+
 create table if not exists public.groups (
   id uuid primary key default gen_random_uuid(),
   name text not null,
